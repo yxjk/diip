@@ -23,3 +23,5 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/admin-web/node_modules/
+/admin-web/package-lock.json
