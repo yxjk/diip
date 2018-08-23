@@ -23,6 +23,7 @@
         <module>executor</module>
         <module>admin</module>
         <module>admin-web</module>
+        <module>eureka</module>
     </modules>
 
 	<properties>
@@ -53,21 +54,6 @@
                 <optional>true</optional>
             </dependency>
 
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-openfeign</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
