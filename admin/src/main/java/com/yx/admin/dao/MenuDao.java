@@ -1,6 +1,6 @@
 package com.yx.admin.dao;
 
-import com.yx.admin.domain.Menu;
+import com.yx.entity.domain.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

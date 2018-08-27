@@ -2,11 +2,13 @@ package com.yx.admin.service;
 
 import com.yx.admin.dao.MenuDao;
 import com.yx.admin.dao.UserDao;
-import com.yx.admin.domain.Menu;
-import com.yx.admin.domain.User;
+import com.yx.entity.domain.Menu;
+import com.yx.entity.domain.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.*;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
