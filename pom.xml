@@ -24,6 +24,7 @@
         <module>admin</module>
         <module>admin-web</module>
         <module>eureka</module>
+        <module>entity</module>
     </modules>
 
 	<properties>
