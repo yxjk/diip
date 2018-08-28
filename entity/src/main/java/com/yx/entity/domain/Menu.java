@@ -3,12 +3,12 @@ package com.yx.entity.domain;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
-import java.util.Objects;
 
 @Data
 @Entity(name = "DI_MENU")
-public class Menu {
+public class Menu implements Serializable {
     @Id
     @Column(name = "ID", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)

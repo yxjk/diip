@@ -3,10 +3,11 @@ package com.yx.entity.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Objects;
 
-@Entity
-public class Batch {
+@Entity(name = "BATCH")
+public class Batch implements Serializable {
     private String batchId;
 
     @Id

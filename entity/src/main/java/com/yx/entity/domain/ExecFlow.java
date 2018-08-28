@@ -3,13 +3,13 @@ package com.yx.entity.domain;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.Objects;
 
 @Data
 @Entity
 @Table(name = "EXEC_FLOW")
-public class ExecFlow {
+public class ExecFlow implements Serializable {
     @Id
     @Column(name = "ID")
     private int id;

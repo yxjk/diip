@@ -4,10 +4,11 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Objects;
 
-@Entity
-public class Trigger {
+@Entity(name = "TRIGGER")
+public class Trigger implements Serializable {
     private int id;
     private String name;
 

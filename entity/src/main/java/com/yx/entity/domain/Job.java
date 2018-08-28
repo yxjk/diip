@@ -3,12 +3,13 @@ package com.yx.entity.domain;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
 @Data
-@Entity
-public class Job {
+@Entity(name = "JOB")
+public class Job implements Serializable {
     @Id
     @Column(name = "ID")
     private int id;

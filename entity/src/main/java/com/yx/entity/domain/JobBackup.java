@@ -1,11 +1,12 @@
 package com.yx.entity.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "JOB_BACKUP")
-public class JobBackup {
+public class JobBackup implements Serializable {
     private int bid;
     private int id;
     private int projectId;

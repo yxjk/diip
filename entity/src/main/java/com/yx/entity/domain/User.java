@@ -7,12 +7,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Data
 @Entity(name = "DI_USER")
-public class User {
+public class User implements Serializable {
     @Id
     @Column(name = "USER_ID", nullable = false)
     @GenericGenerator(name = "idGenerator", strategy = "uuid")
