@@ -154,6 +154,7 @@ PRIMARY KEY (`ID`)
 CREATE TABLE `TRIGGER` (
 `ID` int(11) NOT NULL,
 `NAME` varchar(255) NULL,
+`CRON` varchar(255) NULL,
 PRIMARY KEY (`ID`)
 );
 
